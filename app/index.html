@@ -1,0 +1,92 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>App Store</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <!-- endbuild -->
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+        <link rel="stylesheet/less" type="text/css" href="styles/main.less" />
+        <script type="text/javascript" src="bower_components/less/dist/less-1.7.0.js"></script>
+        <!-- <link rel="stylesheet" href="styles/main.css"> -->
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <header>
+            <nav id="site-nav" role="navigator">
+                <ul></ul>
+            </nav>
+            <nav role="navigator">
+                <ul id="app-nav">
+                    <li class="current">
+                        <a href="/appstore">
+                            <p>App Store</p>
+                            <span>Expand ProWorkflow with these awesome tools!</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/developers">
+                            <p>Developers</p>
+                            <span>Create add-ons, integrations & useful apps!</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="app-main">
+            <section class="top-section">
+                <div id="app-search">
+                    <form name="search-app">
+                        <legend>Browse our App Store and find useful tools to extend the functionality of ProWorkflow.</legend>
+                        <input type="search" name="search-app" placeholder="Search..." class="search-query" />
+                        <select>
+                            <option>All Categories</option>
+                            <option>Popularity</option>
+                            <option>New</option>
+                        </select>
+                        <input type="submit" alt="Search apps..." value="Search"/>
+                    </form>
+                </div>
+
+                <div id="be-notified">
+                    <form name="subscription">
+                        <legend>
+                            <strong>Be Notified</strong>
+                            <span>When new apps are added!</span>
+                        </legend>
+                    </form>
+                </div>
+            </section>
+            <section class="main-section">
+                
+            </section>
+        </main>
+
+        <footer>
+        </footer>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+
+        <!-- build:js scripts/main.js -->
+        <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
